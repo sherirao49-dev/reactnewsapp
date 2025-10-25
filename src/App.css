@@ -1,58 +1,39 @@
-/* General body styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-/* Main heading */
-h1 {
-  text-align: center;
-  color: #333;
-  margin-top: 20px;
-}
-
-/* News article card */
-.news-article {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+.article {
+  border: 1px solid #ddd;
+  border-radius: 10px;
   padding: 15px;
-  margin: 15px auto;
-  max-width: 800px;
-  transition: transform 0.3s;
+  width: 300px; /* control the card width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover effect on card */
-.news-article:hover {
-  transform: translateY(-5px);
-}
-
-/* Headline of article */
-.news-article h3 {
-  margin: 10px 0;
-  font-size: 20px;
-  color: #222;
-}
-
-/* Description text */
-.news-article p {
-  margin: 0 0 10px 0;
-  color: #555;
-}
-
-/* Read more link */
-.news-article a {
-  text-decoration: none;
-  color: #1a73e8;
-}
-
-/* Image styling */
-.news-image {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 8px;
+.article-image {
+  width: 100%; /* make image fit the card width */
+  height: 200px; /* fixed height for all images */
+  object-fit: cover; /* crops and maintains aspect ratio */
+  border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.article-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.article-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.read-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
 }
